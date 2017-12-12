@@ -47,7 +47,7 @@ public class ObservableOriginatorServer extends ObservableServer
    * @param client The connection to the client.
    */
   protected synchronized void handleMessageFromClient
-    (ConnectionToClient client, Object message)
+    (Object message, ConnectionToClient client)
   {
     setChanged();
     notifyObservers(new OriginatorMessage(client, message));
