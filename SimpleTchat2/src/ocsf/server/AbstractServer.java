@@ -2,7 +2,7 @@
 // "Object Oriented Software Engineering" and is issued under the open-source
 // license found at www.lloseng.com 
 
-package server;
+package ocsf.server;
 
 import java.net.*;
 import java.util.*;
@@ -178,6 +178,14 @@ public abstract class AbstractServer implements Runnable
     }
   }
 
+  final public void quit()
+  {
+	  try {
+		serverSocket.close();
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+  }
   /**
    * Sends a message to every client connected to the server.
    * This is merely a utility; a subclass may want to do some checks
