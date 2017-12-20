@@ -5,6 +5,9 @@
 package ocsf.client;
 
 import java.util.*;
+
+import client.ObservableClient;
+
 import java.io.*;
 import java.net.*;
 

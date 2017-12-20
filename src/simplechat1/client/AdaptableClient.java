@@ -2,11 +2,13 @@
 // "Object Oriented Software Engineering" and is issued under the open-source
 // license found at www.lloseng.com
 
-package ocsf.client;
+package client;
 
 import java.io.*;
 import java.net.*;
 import java.util.*;
+
+import ocsf.client.AbstractClient;
 
 /**
 * The <code> AdaptableClient </code> is a class
